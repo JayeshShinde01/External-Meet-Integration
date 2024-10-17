@@ -1,0 +1,14 @@
+@{
+    ViewBag.Title = "Google Meet Link";
+}
+
+<h2>Your Google Meet Link</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.MeetLink))
+{
+    <p>Click the link to join the Google Meet: <a href="@ViewBag.MeetLink" target="_blank">@ViewBag.MeetLink</a></p>
+}
+else
+{
+    <p>Google Meet link could not be created.</p>
+}
